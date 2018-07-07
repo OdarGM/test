@@ -270,3 +270,19 @@ footer{
     text-decoration: none;
     color: #def2f1;
 }
+
+.contxd a img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    left: 500px;
+}
+
+.contxd h3{
+    text-align: center;
+}
+
+.talentedinfo{
+    text-align: center;
+}

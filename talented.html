@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url("https://wallpapermemory.com/uploads/702/ken-kaneki-background-ultra-hd-4k-150341.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.bottomleft a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p><a href="index.html"><img src="./Images/logo.png" alt="Logo" width="100px" height="100px"></a></p>
+  </div>
+  <div class="middle">
+    <h1>PAGE COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+    <p><a href="index.html">BACK</a></p>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 15, 2018 15:00:00").getTime();
+//new Date("Jul 15, 2018 15:00:00")
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <link rel="icon" href="https://cdn.discordapp.com/avatars/291221132256870400/c8c2af80d22b9fc06d4a65e12411e59a.png?size=2048" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <meta property="og:title" content="Odar.xyz" />
+    <meta property="og:url" content="https://www.odar.xyz"/>
+    <meta property="og:description" content="Welcome to Odar.xyz">
+    <meta property="og:image" content="https://cdn.discordapp.com/avatars/291221132256870400/c8c2af80d22b9fc06d4a65e12411e59a.png?size=2048" />
+<body>
+    <div class="navbar">
+        <a href="https://www.odar.xyz" ><img src="./Images/logo.png" class="logo" width="100" height="100"></a>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="server.html">SERVER</a>
+            <div class="drp-down">
+                 <button class="dropxd">PROJECTS <i class="fas fa-caret-down"></i></button>
+                 <div class="drp-down-cnt">
+                     <a href="https://bot.odar.xyz">OdarBot</a>
+                     <a href="easydiscordrpc.html">EasyDiscordRPC</a>
+                    <a href="netflix.html"> NetflixToDiscord</a>
+                    <a href="twitchbot.html">Twitch Bot</a>
+                    <a href="talented.html">MyTalented</a>
+                </div>
+           </div>
+           <a href="donate.html">DONATE</a>
+       </div>
+   </div>
+   <div class="index-head">
+       <h1>MyTalented</h1>
+       <p>Show the world you're Talented!</p>
+       <br>
+       <h2>About MyTalented</h2>
+       <h3>The project is called TalentEd, an online social media platform with the objective of sharing your talents, users will be able to upload images-photos demonstrating their skills, if another user views any of your uploads they can "talent" you</h3>
+   </div>
+   <div class="talentedinfo">
+       <h1>Team</h1>
+   </div>
+
+<footer>
+    <br>
+       <p>&copy; Copyright 2018 Odar</p>
+</footer>
+</body>
+</html>-->
